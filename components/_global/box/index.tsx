@@ -1,5 +1,5 @@
-import { ElementType } from 'react';
-import styled from '../styled';
+import { ElementType } from "react";
+import styled from "../styled";
 import {
   LayoutProps,
   BorderProps,
@@ -30,7 +30,7 @@ import {
   order,
   flexbox,
   FlexboxProps,
-} from 'styled-system';
+} from "styled-system";
 
 export type BoxProps = SpaceProps &
   LayoutProps &
@@ -47,16 +47,16 @@ const flexElement = compose(flex, flexGrow, flexShrink, flexBasis, alignSelf, or
 
 const styledBox = compose(space, layout, border, shadow, typography, flexElement, color, position);
 
-export const Box = styled('div')<BoxProps>(
+export const Box = styled("div")<BoxProps>(
   {
-    boxSizing: 'border-box',
+    boxSizing: "border-box",
   },
   styledBox
 );
 
 export const Flex = styled(Box)<StyledFlexProps>(
   {
-    display: 'flex',
+    display: "flex",
   },
   flexbox
 );

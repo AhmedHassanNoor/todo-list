@@ -1,6 +1,6 @@
-import { css } from '@emotion/react';
-import styled from '../styled';
-import theme from '../../../themes';
+import { css } from "@emotion/react";
+import styled from "../styled";
+import theme from "../../../themes";
 import {
   BackgroundProps,
   BorderRadiusProps,
@@ -20,7 +20,7 @@ import {
   space,
   width,
   compose,
-} from 'styled-system';
+} from "styled-system";
 
 interface InputProps {
   invalid?: boolean;
@@ -58,7 +58,7 @@ export const Input = styled.input<Props>`
         ? css`
             border-color: ${theme.colors.accent};
           `
-        : ''}
+        : ""}
 
       &:active,
       &:focus {

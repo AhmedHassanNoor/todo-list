@@ -1,4 +1,4 @@
-import styled from '../styled';
+import styled from "../styled";
 import {
   BorderRadiusProps,
   DisplayProps,
@@ -17,12 +17,12 @@ import {
   compose,
   position,
   PositionProps,
-} from 'styled-system';
-import { css } from '@emotion/react';
+} from "styled-system";
+import { css } from "@emotion/react";
 
 interface ButtonProps {
   color?: string;
-  type?: 'button' | 'submit';
+  type?: "button" | "submit";
 }
 
 type Props = ButtonProps &
@@ -36,7 +36,7 @@ type Props = ButtonProps &
   DisplayProps &
   PositionProps;
 
-export const Button = styled('button')<Props>`
+export const Button = styled("button")<Props>`
   ${() => {
     return css`
       transition: all 0.5s ease;

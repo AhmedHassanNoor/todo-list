@@ -1,4 +1,4 @@
-import styled from '../styled';
+import styled from "../styled";
 import {
   FontFamilyProps,
   FontSizeProps,
@@ -19,9 +19,9 @@ import {
   opacity,
   OpacityProps,
   compose,
-} from 'styled-system';
-import { Box, BoxProps } from '../box';
-import theme from '../../../themes';
+} from "styled-system";
+import { Box, BoxProps } from "../box";
+import theme from "../../../themes";
 
 type TextProps = BoxProps &
   FontFamilyProps &
@@ -35,20 +35,9 @@ type TextProps = BoxProps &
   OpacityProps;
 
 export const Text = styled(Box)<TextProps>(
-    compose(
-        fontFamily,
-        fontWeight,
-        fontSize,
-        fontStyle,
-        textAlign,
-        lineHeight,
-        letterSpacing,
-        opacity,
-        display,
-    ),
+  compose(fontFamily, fontWeight, fontSize, fontStyle, textAlign, lineHeight, letterSpacing, opacity, display)
 );
 
 Text.defaultProps = {
   fontFamily: theme.fonts.body,
 };
-
